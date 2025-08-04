@@ -25,6 +25,21 @@ layout: default
 <h3>On-Yomi: <a>{{ page.on-yomi }}</a></h3>
 {% endif %}
 
+{% if page.elements %}
+<h2>Elements:</h2>
+<p>{{ page.elements }}</p>
+{% endif %}
+
+{% if page.heisig %}
+<h2>Heisig story:</h2>
+<p>{{ page.heisig }}</p>
+{% endif %}
+
+{% if page.commen %}
+<h2>Heisig comment:</h2>
+<p>{{ page.commen }}</p>
+{% endif %}
+
 {{ content }}
 
 <hr>

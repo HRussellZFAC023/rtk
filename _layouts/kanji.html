@@ -32,11 +32,15 @@ layout: default
 
 <h3>On-Yomi: <a>{{ page.on-yomi }}</a> {% if page.kun-yomi %}— Kun-Yomi: <a>{{ page.kun-yomi }}</a>{% endif %}</h3>
 
+{% if page.elements %}
+  <h2>Elements:</h2>
+  <p>{{ page.elements }}</p>
+{% endif %}
 
-	{% if page.primit %}
-    <h2>Primitive:</h2>
-    <p>{{ page.primit }}</p>
-	{% endif %}
+{% if page.primit %}
+  <h2>Primitive:</h2>
+  <p>{{ page.primit }}</p>
+{% endif %}
 
   {% if page.heisig %}	
     <h2>Heisig story:</h2>
